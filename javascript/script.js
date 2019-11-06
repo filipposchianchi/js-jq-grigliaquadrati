@@ -5,11 +5,21 @@
 
 $( document ).ready(function() { 
 
+
+    var numRossi = 0;
+    var numVerdi = 0;
+
     $(".grid-item").click(function() {
         if ($(this).hasClass("rosso")) {
             $(this).css("background", "red");
+            numRossi++;
+            document.getElementById("punt-rosso").innerHTML = "Rossi : " + numRossi;
+
         } else {
             $(this).css("background", "green");
+            numVerdi++;
+            document.getElementById("punt-verdi").innerHTML = "Verdi : " + numVerdi;
+
         }
     })
 

@@ -4,9 +4,17 @@
     box-sizing: border-box;
 }
 
+.container-punteggio {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+
+}
+
 .grid-container {
-    width: 100%;
-    height: 100vh;
+    margin: auto;
+    width: 90%;
+    height: calc(100vh - 50px);
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
   }
