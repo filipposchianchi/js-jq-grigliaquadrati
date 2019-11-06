@@ -30,6 +30,7 @@ $( document ).ready(function() {
             numVerdi++;
             document.getElementById("punt-verdi").innerHTML = "Verdi : " + numVerdi;
         }
+        $(this).off();
     })
 
     
